@@ -1,0 +1,8 @@
+user <%= @user %>;
+worker_processes <%= @worker_processes %>;
+pid /run/nginx.pid;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
